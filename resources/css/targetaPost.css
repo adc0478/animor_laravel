@@ -1,0 +1,41 @@
+.targetaPost{
+  height:180px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius:5px;
+  box-shadow: 1px 5px 15px rgba(1,1,1,.2);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.targetaPost span{
+   color:white;
+   background-color: rgba(1, 1, 1, .6);
+}
+.targetaPost a{
+   justify-self: center;  
+   align-self: center;
+   color:rgb(29,183,22);
+   font-family: Arial, Helvetica, sans-serif;
+   width: 100%;
+   background-color: rgba(1,1,1,.6);
+   text-align: center;
+   box-sizing: border-box;
+   text-decoration: none;
+}
+.targetaPost a:hover{
+   animation-name:animar_targeta;
+   animation-duration: 0.5s;
+   animation-fill-mode: forwards;
+   cursor: pointer;
+}
+@keyframes animar_targeta {
+   to{
+     padding:5%;
+     font-size: 1.2em;
+   }
+}
+.targetaPost span{
+  height:30px;
+}
+

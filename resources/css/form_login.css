@@ -1,0 +1,23 @@
+form{
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid black;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-gap:15px;
+  margin-top: 60px;
+  padding:15px;
+  border-radius:5px;
+}
+
+h2{
+  margin-left: 23%;
+}
+@media screen and (max-width:768px){
+  form{
+   width: 90%;
+  }
+  h2{
+    margin-left: 5%;
+  }
+}

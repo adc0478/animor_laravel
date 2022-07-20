@@ -1,0 +1,38 @@
+.container{
+  width: 80%;
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-gap:20px;
+}
+.container img{
+   width: 80%;
+   height:auto;
+   margin: 0 auto;
+   box-sizing: border-box;
+}
+.container .body{
+  text-align:left;
+  font-size:1.4em;
+}
+.dato{
+  width: 80%;
+  height:auto;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-bottom:1px solid rgba(1,1,1,.7);
+}
+.dato .info{
+  font-size:0.8em;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px){
+   .container h1{
+     font-size:1.5em;
+   }
+   .container .body{
+     font-size:1em;
+   }
+}
+

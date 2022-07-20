@@ -1,0 +1,22 @@
+.formulario{
+  width: 40%;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-gap:20px;
+  margin: 0 auto;
+  opacity: 1;
+  transition: opacity 0.4s;
+  margin-top:100px;
+}
+.formulario label{
+  display:grid;
+  grid-template-columns:1fr;
+  text-align:center;
+}
+
+
+@media screen and (max-width: 768px){
+  .formulario{
+    width:90%;
+  }
+}

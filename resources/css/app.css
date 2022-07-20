@@ -1,0 +1,56 @@
+label{
+  width:100%;
+  margin: 0 auto;
+  height:30px;
+}
+label input{
+ width: 100%;
+ height:100%;
+ box-sizing: border-box;
+}
+.textArea{
+  box-sizing: border-box;
+  width: 100%;
+  height:200px;
+}
+.textArea_Post{
+  height:360px;
+}
+.btn_submit{
+  width:100px;
+  height: 40px;
+  border: none;
+  background-color:rgb(236,219,164);
+  color: black;
+  border-radius:5px;
+}
+.cke_inner{
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.btn_submit:hover{
+   animation-name: btn_submit_animacion;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+   cursor: pointer;
+}
+@keyframes btn_submit_animacion{
+   to{
+    background-color:rgb(223,121,113);
+    color:white;
+    box-shadow:1px 5px 10px rgba(1,1,1,.2);
+   }
+}
+.linea{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height:2px;
+  background-color:rgba(178,178,178,.3);
+}
+@media screen and (max-width: 768px){
+   .textArea_Post{
+      height:400px;
+   }
+}

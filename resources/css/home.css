@@ -1,0 +1,67 @@
+.home{
+  width: 100%;
+  height: 600px;
+  background-image: url('../img/young-female-designer-working-project.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home h1{
+   text-align: center;
+ }
+ .home p{
+   width:90%;
+   margin-top:60px;
+   margin-left: 60px;
+   text-align: left;
+   font-size:2em;
+ }
+ .img{
+   height: 100%;
+   position: relative;
+   overflow: hidden;
+ }
+ .img1{
+   background-image:url('../img/plans-1867745_640.jpg');
+   background-size: cover;
+ }
+ .img2{
+   background-image:url('../img/ux-788002_640.jpg');
+   background-size: cover;
+ }
+ .img3{
+   background-image:url('../img/code-1076536_640.jpg');
+   background-size: cover;
+ }
+ .img span{
+   position: absolute;
+   bottom:-20%;
+   left: 0;
+   height: 20%;
+   width: 100%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   background-color:rgba(117,117,117,.5) ;
+   color: white;
+   transition: bottom .3s;
+ }
+.ultimos_post{
+  display: flex;
+  flex-direction: row;
+  gap:15px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  overflow: auto;
+} 
+@media screen and (max-width: 768px){
+.home{
+  
+}
+.home p{
+  margin-left: 10px;
+  width:100%;
+  box-sizing: border-box;
+  font-size: 1.5em;
+}
+}
