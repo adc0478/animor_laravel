@@ -1,0 +1,13 @@
+.contenido_blog{
+   display:grid;
+   grid-template-columns: repeat(5,1fr);
+   grid-gap:10px;
+   overflow:auto;
+   width: 90%;
+   margin: 0 auto;
+}
+@media screen and (max-width:768px){
+.contenido_blog{
+  grid-template-columns: repeat(3,1fr);
+}
+}

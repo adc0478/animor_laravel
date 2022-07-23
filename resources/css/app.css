@@ -28,6 +28,9 @@ label input{
   height: 200px;
   box-sizing: border-box;
 }
+select{
+  height: 30px;
+}
 
 .btn_submit:hover{
    animation-name: btn_submit_animacion;

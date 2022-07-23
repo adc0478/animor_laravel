@@ -28,3 +28,5 @@ Route::get('formularioPost',[postController::class,'formularioPost'])->name('pos
 Route::post('registrarPost',[postController::class,'registrarPost'])->name('post.registrar');
 Route::get('post/{id?}',[postController::class,'ver_post'])->name('post.ver');
 Route::post('registrarComentario/{id?}',[postController::class,'registrarComentario'])->name('post.comentario');
+Route::get('ver_blog',[postController::class,'ver_blog'])->name('post.blog');
+Route::post('ver_blog',[postController::class,'ver_blogPost'])->name('post.blog');

@@ -74,8 +74,23 @@ class postController extends Controller
         $salida->save();
         return redirect()->route('post.ver',$id);
     } 
-    static function listarUltimosPost($cantidad){
-
+    public function ver_blog(){
+        //traer las categorias
+        $datos = new posts();
+        $categoria = new categorias();
+        return view('blog',['datos'=>$datos->filtrar_postAll(),'cat'=>$categoria->all()]);
+    } 
+    public function ver_blogPost(request $request){
+        $request->validate([
+            'fechaI'=>'required',
+            'fechaF' =>'required'
+        ]);
+        $datos = new posts();
+        $fechaI = $request->fechaI;
+        $fechaF = $request->fechaF;
+        $categoria = $request->categoria;
+        $opt_categoria = new categorias();
+        return view('blog',['datos'=>$datos->filtrar_post($fechaI,$fechaF,$categoria),'cat'=>$opt_categoria->all()]);
     }
 
 }

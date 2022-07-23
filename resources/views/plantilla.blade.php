@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="{{asset('../resources/css/targetaPost.css')}}" type="text/css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="{{asset('../resources/css/post.css')}}" type="text/css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="{{asset('../resources/css/app.css')}}" type="text/css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="{{asset('../resources/css/footer.css')}}" type="text/css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="{{asset('../resources/css/blog.css')}}" type="text/css" media="screen" title="no title" charset="utf-8">
     </head>
     <body>
        <div class="contenido">
@@ -24,7 +26,7 @@
                <li><a href="{{route('home')}}#services" onclick="action_menu()">Services</a></li>
                <li><a href="" onclick="action_menu()">Client</a></li>
                <li><a href="" onclick="action_menu()">Our Staff</a></li>
-               <li><a href="" onclick="action_menu()">Blog</a></li>
+               <li><a href="{{route('post.blog')}}" onclick="action_menu()">Blog</a></li>
                <li><a href="{{route('contacto.formulario')}}" >Contactanos</a></li>
                @guest
                <li><a href="{{route('login')}}">Login</a></li>
@@ -37,9 +39,12 @@
        </nav> 
        @yield('contenido')
        </div>
-       <footer>
-           
-       </footer>
+       <x-footer>
+           <x-slot:facebook>https://www.facebook.com/animordg</x-slot>
+           <x-slot:twitter></x-slot>
+           <x-slot:instagram>https://www.instagram.com/animor_dg/</x-slot>
+           <x-slot:whatsapp></x-slot>
+       </x-footer>
     </body>
     <script src="{{asset('../resources/js/general.js')}}"charset="utf-8"></script>
 </html>
