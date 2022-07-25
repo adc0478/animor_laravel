@@ -28,6 +28,7 @@
 
    </div>
    <div class="linea"></div>
+   <h1>Ultimas entradas</h1>
   <div class="ultimos_post"> 
    @foreach ($datos as $salida)
      <x-targeta_post>
